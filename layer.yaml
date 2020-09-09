@@ -1,0 +1,14 @@
+"includes":
+- "layer:options"
+- "layer:basic"
+- "interface:ssl-termination"
+"exclude": [".travis.yml", "tests", "tox.ini", "test-requirements.txt"]
+"options":
+  "basic":
+    "packages": []
+    "python_packages": []
+    "use_venv": !!bool "true"
+    "include_system_packages": !!bool "false"
+  "ssl-termination-fqdn-proxy": {}
+"repo": "git@github.com:tengu-team/layer-ssl-termination-fqdn-proxy.git"
+"is": "ssl-termination-fqdn-proxy"

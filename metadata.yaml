@@ -1,0 +1,17 @@
+"name": "ssl-termination-fqdn-proxy"
+"summary": "Bridge between a webservice and the ssl-termination-proxy."
+"maintainer": "Sander Borny <sander.borny@ugent.be>"
+"description": |
+  Client which forms a bridge between a webservice and the proxy, to allow service-specific configuration
+"tags":
+- "cache-proxy"
+- "security"
+- "web_server"
+"series":
+- "bionic"
+- "xenial"
+"requires":
+  "ssl-termination":
+    "interface": "ssl-termination"
+    "scope": "container"
+"subordinate": !!bool "true"
